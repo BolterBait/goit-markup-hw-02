@@ -1,13 +1,13 @@
-/* основний колір тексту #212121 */
-
-/* другорядний колір тексту #757575 */
-/* колір тексту на темному фоні #FFFFFF */
-/* другорядний колір на темному фоні rgba(255, 255, 255, 0.6); */
-/* лого, текст посилань і ховера #2196F3 */
+:root {
+  --text-decoration-color: #212121;
+  --second-text-color: #757575;
+  --link-hover-color: #2196f3;
+}
 body {
-  color: #212121;
+  color: var(--text-decoration-color);
   font-family: Roboto, sans-serif;
 }
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -24,16 +24,19 @@ body {
 }
 
 .site-nav {
-  color: #212121;
+  color: var(--text-decoration-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.site-nav .link:active {
+  color: var(--link-hover-color);
+}
 
 .site-nav a:hover,
 .site-nav a:focus {
-  color: #2196f3;
+  color: var(--link-hover-color);
 }
 
 a {
@@ -44,10 +47,10 @@ li {
   list-style-type: none;
 }
 .site-nav .link {
-  color: #212121;
+  color: var(--text-decoration-color);
 }
 .contacts a {
-  color: #757575;
+  color: var(--second-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -55,7 +58,7 @@ li {
 }
 .contacts a:hover,
 .contacts a:focus {
-  color: #2196f3;
+  color: var(--link-hover-color);
 }
 .header-h1 {
   color: #ffffff;
@@ -74,6 +77,19 @@ li {
   background-color: #2f303a;
 }
 .button {
+  font-family: inherit;
+  color: var(--text-decoration-color);
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.button-service {
   color: #ffffff;
   background-color: #2196f3;
   font-family: inherit;
@@ -84,9 +100,27 @@ li {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+.button-filter {
+  font-family: inherit;
+  color: var(--text-decoration-color);
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   cursor: pointer;
 }
-.header-advantages {
+.button-filter:hover {
+  color: #ffffff;
+  background-color: var(--link-hover-color);
+}
+.header-advantages,
+.header-portolio {
   display: none;
 }
 
@@ -98,10 +132,10 @@ li {
   text-transform: uppercase;
 }
 .section .p {
-  color: #757575;
+  color: var(--second-text-color);
 }
 .advantages-text {
-  color: #757575;
+  color: var(--second-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -126,6 +160,11 @@ li {
 }
 .address {
   color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .mail,
 .tel {
@@ -134,10 +173,10 @@ li {
 
 .mail:hover,
 .tel:hover {
-  color: #2196f3;
+  color: var(--link-hover-color);
 }
 .team-link p {
-  color: #757575;
+  color: var(--second-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
