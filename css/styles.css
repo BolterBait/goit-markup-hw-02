@@ -5,7 +5,7 @@
 }
 body {
   color: var(--text-decoration-color);
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif, "Courier New", sans-serif;
 }
 
 .logo {
@@ -136,7 +136,6 @@ li {
 }
 .advantages-text {
   color: var(--second-text-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -161,7 +160,6 @@ li {
 .address {
   color: #ffffff;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -177,7 +175,6 @@ li {
 }
 .team-link p {
   color: var(--second-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
