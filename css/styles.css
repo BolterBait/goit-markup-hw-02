@@ -185,3 +185,10 @@ li {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.project-name {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+
+color: var(--text-decoration-color);
