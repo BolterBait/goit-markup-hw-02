@@ -212,3 +212,7 @@ body {
 .tel {
   font-style: normal;
 }
+
+.site-nav .current {
+  color: var(--link-hover-color);
+}
